@@ -1,261 +1,360 @@
-/* 
+/*
 Student Name: John Kuronya
+Date: November 25, 2024
 File Name: styles.css
-Date: November 25, 2024 
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, h3, ul {
-    margin: 0;
-    padding: 0;
-    border: 0;
-  }
-
-  html {
-    position: relative;
-    min-height: 100%;
+body, header, nav, main, footer, img, p, h1, h2, h3, ul, article, section, aside, figure, figcaption, label, input, select, textarea, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
-  
-  /* Style rules for body and images */
-  body {
-    background-color: #ffffff;
-  }
-  
-  img {
-    max-width: 100%;
-    display: block;
-  }
-  
-  /* Style rules for mobile viewport */
-  
-  /* Style rules to show mobile class and hide tab-desk class */
-  .mobile{
-    display: block;
-  }
-  
-  .mobile h1{
-    font-family: "Emblema One", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .mobile h3{
-    font-family: "Lora", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .tab-desk{
-    display: none;
-  }
-  
-  /* Style rules for header area */
-  .mobile h1, h3{
-    padding: 2%;
-    text-align: center;
-  }
-  
-  /* Style rules for navigation area */
-  nav {
-    background-color: #231d84;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    text-align: center;
-  }
-  
-  nav li {
-    display: block;
-    font-size: 1.5em;
-    font-family: Geneva, Arial, sans-serif;
-    font-weight: bold;
-    border-top: 0.5px solid #ffffff;
-  }
-  
-  nav li a {
-    display: block;
-    color: #ffffff;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-right: 2em;
-    padding-left: 2em;
-    text-decoration: none;
-  }
-  
-  /* Style rules for main content */
-  main{
-    padding: 2%;
-    font-family: "Lora", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  main p{
-    font-size: 1.25em;
-  }
-  
-  main h3{
-    padding-top: 2%;
-  }
-  
-  main ul{
-    list-style-type: square;
-  }
-  
-  .link{
-    color: #4d3319;
-    text-decoration: none;
-    font-weight: bold;
-    font-style: italic;
-  }
-  
-  .action{
-    font-size: 1.75em;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  .round{
-    border-radius: 6px;
-  }
-  
-  #info ul{
-    margin-left: 10%;
+
+/* Style rules for body and images */
+body {
+  background-color: #417589;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Style rules for hero content */
+
+#hero {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: aliceblue;
+}
+
+
+.tech {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rule to hide tablet-desk */
+.tab-desk {
+  display: none;
+}
+
+/* Style rules for header content */
+header {
+  text-align: center;
+  color: #e3eef2;
+  padding: 1%;
+}
+
+header h1 {
+  font-size: 5em;
+  font-family: 'Merriweather', serif;
+}
+
+header h3 {
+  font-style: italic;
+  font-size: 1.25em;
+  font-family: Futura, Arial, sans-serif;
+}
+
+/* Style rules for navigation area */
+nav {
+  background-color: #213b45;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li {
+  display: block;
+  font-size: 1.15em;
+  font-family: Verdana, Arial, sans-serif;
+  font-weight: bold;
+  border: 1px solid #e3eef2;
+  border-radius: 2px; 
+}
+
+nav li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 3%;
+  text-decoration: none;
+}
+
+a:hover{
+color: rgba(123, 195, 168, 0.8);
+}
+
+/* Style rules for main content */
+.hobbypage{
+max-width: 1200px;
+margin: 0 auto;
+display: grid;
+gap: 1rem;
+}
+
+.career{
+  display: grid;
+  grid-template-columns: 1fr 3fr; 
+  gap: 3rem; 
+  align-items: start; 
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+
+.hobby{
+max-width: 1200px;
+margin: 0 auto;
+display: grid;
+gap: 1rem;
+}
+
+.home{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
   }
 
-  .jen_img_1 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 8px;
-    width: 30%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  
-  /* Style rules for main content */
-  main {
-    padding: 2%;
-    font-family: Verdana, Arial, sans-serif;
-  }
-  
-  main p {
-    font-size: 1.25em;
-  }
-  
-  main ul {
-    list-style-type: square;
-  }
-  
-  .link {
-    color: #4d3319;
-    text-decoration: none;
-    font-weight: bold;
-    font-style: italic;
-  }
-  
-  .action {
-    font-size: 1.75em;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  #contact {
-    text-align: center;
+  .hobby-para {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    padding-top: 3em;
+    }
+
+.grid-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  font-family: Arial, sans-serif;
   }
 
-  #welcome {
-    text-align: center;
-    padding-top: 5em;
+main {
+  padding-bottom: 50px;
+  background-color: #e3eef2;
+  font-family: 'Lato', sans-serif;
+}
+
+main h2 {
+  color: #213B45;
+  text-shadow: 2px 2px 3px #918888 ;
+}
+
+main p {
+  color: #0F252E;
+  font-size: 1.25em;
+}
+
+main a {
+  text-decoration: none;
+  color: #417589;
+  font-weight: bold;
+}
+
+main ul {
+  list-style-type: square;
+  font-size: 1.15em;
+}
+
+main ul li:last-child {
+  padding-bottom: 2%;
+}
+
+.action {
+  font-size: 1.25em;
+  color: #213b45;
+  font-weight: bold;
+  font-variant-caps: all-small-caps; 
+}
+
+.round {
+  border-radius: 10px;
+}
+
+.machine {
+ border: 5px solid #417589;
+ box-shadow: 10px 5px 5px  #968d8d;
+ padding: 5px;
+}
+
+figure {
+  padding-top: 3em;
+}
+
+figcaption {
+  padding-bottom: .75em;
+  padding-top: .5em;
+}
+
+.position {
+  margin-top: 1.5em;
+}
+
+#about {
+  padding: 5em;
+}
+
+#about a {
+  color: #213b45;
+}
+
+/* Form Section Styling */
+.form-section {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.form-section p {
+  font-size: 1em;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Form Elements */
+form {
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, select, textarea, button {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #417589;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #315a6b;
+}
+
+/* Style rules for footer content */
+footer {
+  text-align: center;
+  font-size: 0.75em;
+  color: #e3eef2;
+  font-weight: bold;
+  background-color: #213b45;
+  padding: 10px 0;
+}
+
+footer a {
+  color: #e3eef2;
+  text-decoration: none;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .tech {
+    width: 45%;
   }
-  
-  /* Style rules for footer content */
-  footer {
-    text-align: center;
-    font-size: 0.85em;
-    background-color: #231d84;
-    color: #f6eee4;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-    overflow: hidden;
-    padding-top: 1em;
-  }
-  
-  footer a {
-    color: #f3e6d8;
-    text-decoration: none;
-  }
-  
-  /* Media Query for Tablet Viewport */
-  @media screen and (min-width: 620px), print {
-    /* Tablet Viewport: Show tab-desk class, hide mobile class */
-    .tab-desk {
-      display: block;
-    }
-    .mobile {
-      display: none;
-    }
-  
-    /* Tablet Viewport: Style rules for nav area */
-    nav li {
-      border-top: none;
-      display: inline-block;
-      font-size: 1.25em;
-    }
-  
-    nav li a {
-      padding: 0.5em;
-    }
-  }
-  
-  /* Media Query for Desktop Viewport */
-  @media screen and (min-width: 1000px), print {
-    /* Desktop Viewport: Style rules for nav area */
-    nav li {
-      font-size: 1.5em;
-    }
-  
-    nav li a {
-      padding-top: 0.5em;
-      padding-bottom: 0.5em;
-      padding-left: 1.5em;
-      padding-right: 1.5em;
-    }
-  
-    nav li a:hover {
-      color: #010101;
-      background-color: #ffffff;
-    }
-  
-    /* Desktop Viewport: Style rules for main content */
-    #info ul {
-      margin-left: 5%;
-    }
-  }
-  
-  /* Media Query for Large Desktop Viewports */
-  @media screen and (min-width: 1921px) {
-    body {
-      background: linear-gradient(#ffffff, #78593a);
-    }
-  
-    #wrapper {
-      width: 1920px;
-      margin: 0 auto;
-    }
-  
-    main {
-      background-color: #ffffff;
-    }
-  
-    /* Media Query for Print */
-    @media print {
-      body {
-        background-color: white;
-        color: black;
-      }
-    }
-  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+ .hobbypage { 
+   grid-template-columns: repeat(2, 1fr);
+ }
+
+ .tech {
+  width: 35%;
+}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+nav li {
+  display: inline-block;
+  justify-content: space-between;
+  text-align: center;
+  border: none;
+  padding: 14px 16px;
+}
+
+nav li a {
+  display: inline-block;
+  justify-content: space-between;
+  text-align: center;
+  border: none;
+  padding: 14px 16px;
+}
+
+.hobbypage {
+   grid-template-columns: repeat(3, 1fr);
+   gap: 2rem;
+}
+
+.tech {
+  width: 35%;
+}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+nav li {
+  display: inline-block;
+  justify-content: space-between;
+  text-align: center;
+  border: none;
+  padding: 14px 16px;
+}
+
+nav li a {
+  display: inline-block;
+  justify-content: space-between;
+  text-align: center;
+  border: none;
+  padding: 14px 16px;
+}
+
+.hobbypage {
+   grid-template-columns: repeat(3, 1fr);
+   gap: 
+   4rem;
+}
+
+.tech {
+  width: 35%;
+}
+}

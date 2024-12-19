@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- 
+	Student Name: John Kuronya
+	File Name: hobbies.html
+	Date: November 25, 2024
+ -->
+<html lang="en">
+<head>
+	<title>My Hobbies</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<header>
+		<h1>My Hobbies.</h1>
+		<h3>Thing's I like to do!</h3>
+	</header>
+	
+	<nav>
+		<ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+    </ul>
+	</nav>
+	
+<!-- Main content of the webpage -->
+<main>
+  <section id="hobby">
+    <div class="hobby-para">
+        <div class="item">
+          <p>Sewing, cooking, and reading are three of my greatest passions, each bringing creativity, connection, and fulfillment into my life. Sewing allows me to express myself through fabric and thread, whether I’m designing garments, mending clothing, or crafting heartfelt gifts. It connects me to tradition, as I learned the skill from my mother, and to a vibrant community of fellow enthusiasts who share tips and ideas. Cooking, on the other hand, lets me nourish loved ones while experimenting with flavors and recipes. I find joy in transforming simple ingredients into meals that bring people together, creating memories and fostering connection around the table. It’s a chance to explore cultures and traditions while expressing love and creativity. Finally, reading is my escape into new worlds and ideas. Books captivate my imagination, broaden my understanding of different cultures and perspectives, and inspire me with stories of growth and triumph. Whether it’s the tactile satisfaction of sewing, the sensory experience of cooking, or the mental escape of reading, these hobbies provide relaxation, discovery, and a sense of accomplishment. Together, they enrich my life, offering both personal fulfillment and meaningful connections with the world around me.</p>
+        </div>
+      </div>
+
+      <div class="hobbypage">
+        <div class="item"> 
+          <figure> 
+              <h2>Sewing:</h2>
+              <img class="machine round" src="images/Jen_Sewing.jpg" alt="Jen Sewing">
+              <figcaption>Sewing a new quilt.</figcaption>
+          </figure>
+
+          <figure> 
+            <img class="machine round" src="images/Jen_Sewing.jpg" alt="Jen Sewing">
+            <figcaption>Sewing a new quilt.</figcaption>
+          </figure>
+        </div>
+           
+        <div class="item">
+          <figure> 
+            <h2>Cooking:</h2>
+            <img class="machine round" src="images/Jen_Cooking.jpg" alt="Jen Cooking">
+            <figcaption>Preparing a treat for my class.</figcaption>
+          </figure>
+
+          <figure> 
+            <img class="machine round" src="images/Jen_Cooking.jpg" alt="Jen Cooking">
+            <figcaption>Preparing a treat for my class.</figcaption>
+          </figure>
+
+        <article>
+         <!-- <p>According to an article in <a href="https://www.smithsonianmag.com/innovation/artificial-intelligence-future-scenarios-180968403/" target="_blank">smithsonian.com</a>, AI is not one but hundreds of specialized tasks. AI algorithms are used within the stock market. Its algorithms make new algorithms that have surprised researchers. </p>-->
+      </div>
+           
+      <div class="item">
+        <aside>
+          <p class="tab-desk">Bill Gates, Elon Musk, and Stephen Hawking have all warned about the continued development of AI. Collectively, they felt that continued AI development, done improperly, could spell disaster for the human race.</p>
+        </aside>
+      </article>
+
+          <figure> 
+            <h2>Reading:</h2>
+            <img class="machine round" src="images/Jen_Cooking.jpg" alt="Jen Reading">
+            <figcaption>Jen reading!</figcaption>
+          </figure>
+
+          <figure> 
+            <img class="machine round" src="images/Jen_Cooking.jpg" alt="Jen Reading">
+            <figcaption>Jen reading!</figcaption>
+          </figure>
+
+            <!-- <ul>
+              <li><a href="https://www.cnbc.com/video/2018/11/09/worlds-first-ai-news-anchor-debuts-in-china.html" target="_blank">News Anchor</a></li>
+              <li><a href="https://youtu.be/gn4nRCC9TwQ" target="_blank">Google Deep Mind</a></li>
+              <li><a href="https://youtu.be/iiVgg5MIVmI" target="_blank">Google Assistant</a></li>
+            </ul> -->
+        </div>
+      </div>
+  </section>
+
+  <section class="form-section">
+    <h2>Request Help or Services</h2>
+    <p>If you're interested in help or services related to my hobbies, please fill out the form below. I would love to connect with you!</p>
+    <form id="hobby-form" action="submit-form.php" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+        <label for="hobby">Select a Hobby:</label>
+        <select id="hobby" name="hobby" required>
+            <option value="">--Please choose an option--</option>
+            <option value="sewing">Sewing</option>
+            <option value="cooking">Cooking</option>
+            <option value="reading">Reading</option>
+        </select>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us how you can help or provide services" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+</main>
+	
+  <footer>
+    <p>&copy; Copyright 2024. All Rights Reserved.</p>
+    <p><a href="mailto:jkuronya@my365.bellevue.edu">jkuronya@my365.bellevue.edu</a></p>
+  </footer>
+</body>
+</html>
